@@ -20,12 +20,10 @@
 中文语法错误纠正（Chinese Grammatical Error Correction，CGEC）旨在识别并纠正句子中的语法错误。
 CGEC任务不仅可以作为语言学习、自动语音识别、文本数据标注等任务的前置任务，而且还可以服务于教育、媒体和出版等行业。
 
-<div align="center">
 <figure align="center"  style="display: block;">
   <img src="figure/concept_confusion.png" width="500" alt="概念混淆">
   <figcaption>图1 概念混淆示例</figcaption>
 </figure>
-</div>
 
   
 LLM在训练阶段会学习到不同的语法概念，而纠正错误时可能出现概念混淆(concept confusion)问题。如图1所示，LLM无法区分学习到的IWO和IWC这两个语法概念，导致对同一个错误句子，给出了和这两个语法概念对应的两种纠正。由于思维方式的限制，LLM可以同时给出不同的纠正，但无法回顾以确定哪一个纠正更可靠。
